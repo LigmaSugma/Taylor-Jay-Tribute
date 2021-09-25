@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: flex-start;
+                max-width: 1000px;
+                margin: auto;
+                font-family: sans-serif;
+            }
+
+            h1, h2, p {
+                text-align: center;
+                margin: 0;
+                height: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            h1, h2 {
+                background-color: #FBFBD7;
+            }
+
+            #img-div {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
+
+            #image1 {
+                max-width: 300px;
+                width: 30%;
+                height: auto;
+                margin: auto;
+            }
+
+            #image2 {
+                max-width: 500px;
+                width: 50%;
+                height: auto;
+                margin: auto;
+            }
+
+            #history-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                column-gap: 15px;
+            }
+
+            #info-grid {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .dark {
+                background-color: #EEEEEE;
+            }
+
+            .light {
+                background-color: #F5F5F5;
+            }
+
+            .left {
+                text-align: right;
+                width: 100%;
+                height: 2em;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                margin-right: 7px;
+            }
+
+            .right {
+                text-align: left;
+                width: 100%;
+                height: 2em;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-left: 7px;
+            }
+
+            #bottom-link {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <h1 id="title">Taylor "TaylorJay" Johnson</h1>
+
+            <div id="img-div" class="light">
+                <img id="image1" src="https://i.imgur.com/Ro2I2HC.png" />
+                <p class="img-caption"><em>TaylorJay in his "Exodus" jersey.</em></p>
+                <img id="image2" src="https://cdn.discordapp.com/attachments/535548956889841666/891111699820707840/unknown.png" />
+                <p class="img-caption"><em>TaylorJay honing his skills in the practice range.</em></p>
+            </div>
+
+            <div id="tribute-info">
+                <h2>Player Information</h2>
+                <div id="info-grid">
+                    <div class="light row">
+                        <div class="left"><strong>Platform:</strong></div>
+                        <div class="right">PC</div>
+                    </div>
+                    <div class="dark row">
+                        <div class="left"><strong>Name:</strong></div>
+                        <div class="right">Taylor Jeffrey Johnson</div>
+                    </div>
+                    <div class="light row">
+                        <div class="left"><strong>Died:</strong></div>
+                        <div class="right">August 27, 2021</div>
+                    </div>
+                    <div class="dark row">
+                        <div class="left"><strong>Country:</strong></div>
+                        <div class="right">United States</div>
+                    </div>
+                    <div class="light row">
+                        <div class="left"><strong>Status:</strong></div>
+                        <div class="right">Deceased</div>
+                    </div>
+                    <div class="dark row">
+                        <div class="left"><strong>Cause of Death:</strong></div>
+                        <div class="right">Attempted murder, suicide</div>
+                    </div>
+                    <div class="light row">
+                        <div class="left"><strong>Approx. Total Earnings:</strong></div>
+                        <div class="right">30 years to life for attempted murder</div>
+                    </div>
+                    <div class="dark row">
+                        <div class="left"><strong>K/D Ratio:</strong></div>
+                        <div class="right">0.0</div>
+                    </div>
+                </div>
+
+                <h2>History</h2>
+                <div id="history-grid" class="dark">
+                    <div class="left"><em>2018-04-01 - 2018-10-02</em></div>
+                    <div class="right">Pure Gaming</div>
+                    <div class="left"><em>2018-10-02 - 2018-10-24</em></div>
+                    <div class="right">eUnited</div>
+                    <div class="left"><em>2020-01-22 - 2020-07-24</em></div>
+                    <div class="right">Exodus</div>
+                    <div class="left"><em>2020-07-24 - 2020-09-11</em></div>
+                    <div class="right">YAHO</div>
+                    <div class="left"><em>2021-08-27 - Current</em></div>
+                    <div class="right">Hell All-Stars</div>
+                </div>
+            </div>
+            <div id="bottom-link">
+                <h3>For information on tournament performances and earnings, go to his 
+                    <a id="tribute-link" href="https://liquipedia.net/pubg/TaylorJay" target="_blank"> Liquipedia page</a>.</h3>
+            </div>
+        </main>
+    </body>
+</html>
